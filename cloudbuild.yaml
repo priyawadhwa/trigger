@@ -1,5 +1,4 @@
 steps:
-  name: "gcr.io/cloud-builders/docker"
-  args: ["build", "-t", "gcr.io/priya-wadhwa/trigger", "."]
-images: ["gcr.io/priya-wadhwa/trigger"]
-
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/priya-wadhwa/build-trigger', '.']
+images: ['gcr.io/priya-wadhwa/build-trigger']
