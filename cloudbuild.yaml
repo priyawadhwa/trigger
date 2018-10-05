@@ -6,6 +6,6 @@ steps:
 - name: 'gcr.io/k8s-skaffold/skaffold:v0.15.0'
   args: ['gcloud', 'config', 'config-helper', '--format=json']
 - name: 'gcr.io/k8s-skaffold/skaffold:v0.15.0'
-  args: ['which', 'gcloud']
+  args: ['kubectl', 'config', 'view']
 - name: 'gcr.io/k8s-skaffold/skaffold:v0.15.0'
   args: ['skaffold', 'run']
