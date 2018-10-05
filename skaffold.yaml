@@ -2,8 +2,8 @@ apiVersion: skaffold/v1alpha3
 kind: Config
 build:
   artifacts:
-  - imageName: gcr.io/k8s-skaffold/skaffold-example
+  - imageName: gcr.io/priya-wadhwa/skaffold
 deploy:
   kubectl:
     manifests:
-    - deploy/skaffold/*
+    - pod.yaml
