@@ -1,5 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['container', 'clusters', 'get-credentials', 'kritis', '--zone', 'us-central1-a', '--project', $PROJECT_ID]
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['config', 'config-helper', '--format=json']
 - name: 'gcr.io/k8s-skaffold/skaffold:v0.15.0'
   args: ['skaffold', 'run']
