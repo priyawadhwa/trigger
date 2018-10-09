@@ -1,4 +1,3 @@
 FROM ubuntu
 COPY foo /foo
-CMD echo /foo
-
+ENTRYPOINT echo "hey"
