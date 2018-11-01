@@ -7,3 +7,4 @@ deploy:
   kubectl:
     manifests:
     - pod.yaml
+
