@@ -1,8 +1,8 @@
-apiVersion: skaffold/v1alpha4
+apiVersion: skaffold/v1alpha3
 kind: Config
 build:
   artifacts:
-  - image: gcr.io/priya-wadhwa/skaffold-demo
+  - imageName: gcr.io/priya-wadhwa/skaffold-demo
 deploy:
   kubectl:
     manifests:
